@@ -13,6 +13,6 @@
     </stylesheets>
    <children>
       <Button layoutX="300.0" layoutY="211.0" mnemonicParsing="false" onAction="#handleButtonActionBack" text="back home" />
-      <Label layoutX="202.0" layoutY="115.0" text="view his own profile and ability to edit it " />
+      <Label layoutX="202.0" layoutY="115.0" text="view his own profile and ability to edit it     " />
    </children>
 </AnchorPane>
