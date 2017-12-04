@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+           login_button.button { -fx-focus-color: transparent; }
+           exit_button.button { -fx-focus-color: transparent; }
+
+}

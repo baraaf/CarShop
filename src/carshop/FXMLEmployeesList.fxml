@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.FXMLEmployeesListController">
+    <stylesheets>
+        <URL value="@fxmlemployeeslist.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="91.0" layoutY="148.0" prefHeight="109.0" prefWidth="364.0" text="TableView of employees , edit them , delete , add " />
+      <Button layoutX="403.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleButtonActionExit" text="exit" />
+      <Button layoutX="259.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleButtonActionBack" text="back" />
+   </children>
+</AnchorPane>

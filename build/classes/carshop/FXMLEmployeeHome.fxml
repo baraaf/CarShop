@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.FXMLEmployeeHomeController">
+    <stylesheets>
+        <URL value="@fxmlemployeehome.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="welcoming_label" layoutX="223.0" layoutY="81.0" text="Welcome " />
+      <Button fx:id="cars_button" layoutX="112.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleButtonActionCars" prefHeight="81.0" prefWidth="148.0" text="Cars" />
+      <Button fx:id="customer_button" layoutX="367.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleButtonActionCustomers" prefHeight="81.0" prefWidth="172.0" text="Customers" />
+      <Button fx:id="profile_button" layoutX="213.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButtonActionProfile" prefHeight="49.0" prefWidth="139.0" text="My profile" />
+      <Button fx:id="logout_button" layoutX="478.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleButtonActionLogout" text="Log out " />
+      
+   </children>
+</AnchorPane>

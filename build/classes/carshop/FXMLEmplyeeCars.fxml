@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.FXMLEmplyeeCarsController">
+    <stylesheets>
+        <URL value="@fxmlemplyeecars.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="57.0" layoutY="20.0" text="Tabel of cars , rent , return cars" />
+      <Button layoutX="529.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleButtonActionBackC" text="Back " />
+      <TableView fx:id="car_table" layoutX="68.0" layoutY="71.0" prefHeight="237.0" prefWidth="472.0">
+        <columns>
+          <TableColumn fx:id="model_b" prefWidth="75.0" text="Model" />
+          <TableColumn fx:id="capacity_b" prefWidth="75.0" text="Capacity" />
+            <TableColumn fx:id="rpd_b" prefWidth="75.0" text="Rent Price/day" />
+            <TableColumn fx:id="rent_times_b" prefWidth="75.0" text="Times Rented" />
+            <TableColumn fx:id="status_b" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="165.0" layoutY="332.0" mnemonicParsing="false" text="Rent" />
+      <Button layoutX="300.0" layoutY="332.0" mnemonicParsing="false" text="Return" />
+   </children>
+</AnchorPane>
