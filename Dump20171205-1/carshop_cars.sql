@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `carshop` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `carshop`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: carshop
@@ -53,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-12-05 12:57:19
+-- Dump completed on 2017-12-05 13:11:06

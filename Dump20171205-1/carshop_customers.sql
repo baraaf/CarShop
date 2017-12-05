@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `carshop` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `carshop`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: carshop
@@ -16,30 +18,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `rent`
+-- Table structure for table `customers`
 --
 
-DROP TABLE IF EXISTS `rent`;
+DROP TABLE IF EXISTS `customers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `rent` (
-  `from` date NOT NULL,
-  `to` date NOT NULL,
-  `actual_return` date DEFAULT NULL,
-  `r_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `fine` double DEFAULT NULL,
-  PRIMARY KEY (`r_id`),
-  UNIQUE KEY `r_id_UNIQUE` (`r_id`)
+CREATE TABLE `customers` (
+  `cid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `driving_license_number` varchar(45) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `gender` varchar(45) NOT NULL,
+  `telephone` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`cid`),
+  UNIQUE KEY `cid_UNIQUE` (`cid`),
+  UNIQUE KEY `driving_license_number_UNIQUE` (`driving_license_number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `rent`
+-- Dumping data for table `customers`
 --
 
-LOCK TABLES `rent` WRITE;
-/*!40000 ALTER TABLE `rent` DISABLE KEYS */;
-/*!40000 ALTER TABLE `rent` ENABLE KEYS */;
+LOCK TABLES `customers` WRITE;
+/*!40000 ALTER TABLE `customers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-12-05 12:57:19
+-- Dump completed on 2017-12-05 13:11:06
