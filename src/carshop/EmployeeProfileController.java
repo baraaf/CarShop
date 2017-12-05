@@ -31,7 +31,7 @@ import javafx.stage.Stage;
  *
  * @author User
  */
-public class EmployeeController implements Initializable {
+public class EmployeeProfileController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -55,7 +55,7 @@ public class EmployeeController implements Initializable {
     
     @FXML
   private TextField salarytext;
-    
+   /* 
     @FXML
     private combobox combogender;
     
@@ -76,12 +76,12 @@ public class EmployeeController implements Initializable {
          
           @FXML
     private combobox hireyear;
-          
+          */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+    /*
     @FXML
     private void SaveButtonAction(ActionEvent event)throws IOException{
         
@@ -105,7 +105,7 @@ public class EmployeeController implements Initializable {
                 app_stage.setScene(EmployeeProfile_scene);
                 app_stage.show(); 
     }
-    
+    */
      private void CancelButtonAction(ActionEvent event) throws IOException {
         Parent EmployeeProfile_parent = FXMLLoader.load(getClass().getResource("FXMLEmployeeProfile.fxml"));
         Scene EmployeeProfile_scene = new Scene(EmployeeProfile_parent);
