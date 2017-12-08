@@ -5,8 +5,11 @@
         <group>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLEmployeesListController.java</file>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employees.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLEmployeesList.fxml</file>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/cars.java</file>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/runner.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/DatabaseAPI.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLManagerController.java</file>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLMAnagerCarsController.java</file>
         </group>
     </open-files>

@@ -8,8 +8,9 @@ package carshop;
 
 public class employees {
      private int eid;
-    private String name;
-    private String gender;
+         private String gender;
+
+    private  String name;
     private String dob;
     private String username;
     private String password;
@@ -21,7 +22,7 @@ public class employees {
 
     public employees( String name,String gender, String dob, String telephone,
     String salary, String hire_date ) {
-        //this.eid = eid;
+       // this.eid = eid;
         this.name=name;
         this.gender = gender;
         this.dob = dob;
@@ -32,7 +33,7 @@ public class employees {
     }
 
     public int getEid() {
-        return this.eid;
+        return eid;
     }
 
     public void setEid(int eid) {
@@ -47,6 +48,14 @@ public class employees {
         this.gender = gender;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDob() {
         return dob;
     }
@@ -55,49 +64,53 @@ public class employees {
         this.dob = dob;
     }
 
-    public String getTel_rented() {
-        return telephone;
-    }
-
-    public void setTel_rented(String telephone) {
-        this.telephone = telephone;
-    }
-
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
-        this.username= username;
+        this.username = username;
     }
-    
-     public String getPassword() {
+
+    public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
-        this.password= password;
+        this.password = password;
     }
-    
-     public String getSalary() {
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getSalary() {
         return salary;
     }
 
     public void setSalary(String salary) {
-        this.salary= salary;
+        this.salary = salary;
     }
-    public String getHireDate() {
+
+    public String getA_id() {
+        return a_id;
+    }
+
+    public void setA_id(String a_id) {
+        this.a_id = a_id;
+    }
+
+    public String getHire_date() {
         return hire_date;
     }
 
-    public void setHireDate(String hire_date) {
+    public void setHire_date(String hire_date) {
         this.hire_date = hire_date;
-    } 
-      public String getAid() {
-        return this.a_id;
-    }
-
-    public void setAid(String a_id) {
-        this.a_id = a_id;
     }
 }
+
+    

@@ -76,7 +76,8 @@ public class FXMLEmployeesListController implements Initializable {
        // con=dba.DBconnection.pmartConnection();
     data = FXCollections.observableArrayList();
         setCellTable();
-        LoadDataFromDatabase();    }    
+        LoadDataFromDatabase();  
+            }    
     
     private void setCellTable() {
        
@@ -95,9 +96,10 @@ public class FXMLEmployeesListController implements Initializable {
             DatabaseAPI db = new DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM employees");
             while (rs.next()) {
+                System.out.println(rs.getString(2));
                employees e = new employees( rs.getString(2),rs.getString(5), rs.getDate(3).toString(),  rs.getString(4),  ""+rs.getDouble(9),
    rs.getDate(10).toString());
-            
+
                 data.add(e);
 
             }
