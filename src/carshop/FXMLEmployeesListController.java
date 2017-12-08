@@ -96,7 +96,7 @@ public class FXMLEmployeesListController implements Initializable {
             ResultSet rs = db.read("SELECT * FROM employees");
             while (rs.next()) {
                employees e = new employees( rs.getString(2),rs.getString(5), rs.getDate(3).toString(),  rs.getString(4),  ""+rs.getDouble(9),
-   ""+rs.getDate(10));
+   rs.getDate(10).toString());
             
                 data.add(e);
 
