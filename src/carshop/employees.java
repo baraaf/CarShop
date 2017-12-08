@@ -4,36 +4,29 @@
  * and open the template in the editor.
  */
 package carshop;
-import java.util.Date;
 
-/**
- *
- * @author User
- */
-class employees {
+
+public class employees {
      private int eid;
     private String name;
     private String gender;
-    private Date dob;
+    private String dob;
     private String username;
     private String password;
     private String telephone;
-    private double salary;
-    private int a_id ;
-    private Date hire_date;
+    private String salary;
+    private String a_id ;
+    private String hire_date;
     
 
-    public employees( String name,String gender, Date dob, String username, String telephone,
-    double salary,int a_id, Date hire_date ) {
+    public employees( String name,String gender, String dob, String telephone,
+    String salary, String hire_date ) {
         //this.eid = eid;
         this.name=name;
         this.gender = gender;
         this.dob = dob;
-        this.username = username;
-       // this.password = password;
         this.telephone=telephone;
         this.salary=salary;
-        this.a_id=a_id;
         this.hire_date=hire_date;
      
     }
@@ -54,11 +47,11 @@ class employees {
         this.gender = gender;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
@@ -86,25 +79,25 @@ class employees {
         this.password= password;
     }
     
-     public double getSalary() {
+     public String getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(String salary) {
         this.salary= salary;
     }
-    public Date getHireDate() {
+    public String getHireDate() {
         return hire_date;
     }
 
-    public void setHireDate(Date hire_date) {
+    public void setHireDate(String hire_date) {
         this.hire_date = hire_date;
     } 
-      public int getAid() {
+      public String getAid() {
         return this.a_id;
     }
 
-    public void setAid(int a_id) {
+    public void setAid(String a_id) {
         this.a_id = a_id;
     }
 }
