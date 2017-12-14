@@ -88,7 +88,7 @@ public class FXMLCarsGuestController implements Initializable {
             ResultSet rs = db.read("SELECT * FROM cars ");
             while (rs.next()) {
                if("available".equals(rs.getString("status"))){
-                cars c = new cars(rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), "" + rs.getInt(5),rs.getString(4));
+                cars c = new cars(""+rs.getString(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), "" + rs.getInt(5),rs.getString(4));
                 data.add(c);
                 }
             }

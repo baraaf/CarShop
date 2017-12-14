@@ -7,8 +7,8 @@ package carshop;
 
 
 public class employees {
-     private int eid;
-         private String gender;
+     private String eid;
+     private String gender;
 
     private  String name;
     private String dob;
@@ -20,9 +20,10 @@ public class employees {
     private String hire_date;
     
 
-    public employees( String name,String gender, String dob, String telephone,
+    public employees( String eid,String name,String gender, String dob, String telephone,
     String salary, String hire_date ) {
-       // this.eid = eid;
+       this.eid = eid;
+
         this.name=name;
         this.gender = gender;
         this.dob = dob;
@@ -32,11 +33,11 @@ public class employees {
      
     }
 
-    public int getEid() {
+    public String getEid() {
         return eid;
     }
 
-    public void setEid(int eid) {
+    public void setEid(String eid) {
         this.eid = eid;
     }
 

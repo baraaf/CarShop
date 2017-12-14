@@ -63,20 +63,14 @@ public class FXMLEmployeesListController implements Initializable {
                 app_stage.show(); 
 
     }
-      @FXML
-            private void handleButtonActionExit(ActionEvent event) throws IOException {
-        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-          
-                app_stage.hide(); 
-
-    }
+     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
        // con=dba.DBconnection.pmartConnection();
     data = FXCollections.observableArrayList();
         setCellTable();
-        LoadDataFromDatabase();  
+        refreshTable();  
             }    
     
     private void setCellTable() {
@@ -91,13 +85,15 @@ public class FXMLEmployeesListController implements Initializable {
 
     }
 
-    private void LoadDataFromDatabase() {
+    private void refreshTable() {
+              data.clear();
+
         try {
             DatabaseAPI db = new DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM employees");
             while (rs.next()) {
                 System.out.println(rs.getString(2));
-               employees e = new employees( rs.getString(2),rs.getString(5), rs.getDate(3).toString(),  rs.getString(4),  ""+rs.getDouble(9),
+               employees e = new employees( ""+rs.getString(1),rs.getString(2),rs.getString(5), rs.getDate(3).toString(),  rs.getString(4),  ""+rs.getDouble(9),
    rs.getDate(10).toString());
 
                 data.add(e);
@@ -110,4 +106,24 @@ public class FXMLEmployeesListController implements Initializable {
         employees_table.setItems(data);
 
     }
+    
+ 
+            @FXML
+    public void delete_row( ) {
+    
+      employees employee_selected=   employees_table.getSelectionModel().getSelectedItem();
+      
+      try {
+            DatabaseAPI db = new DatabaseAPI();
+             db.write("delete  from employees where eid ="+employee_selected.getEid());
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+      refreshTable(); 
+
+    }
+    
+    
+    
 }

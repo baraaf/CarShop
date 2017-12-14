@@ -15,8 +15,8 @@
         <URL value="@fxmlhomeofhome.css" />
     </stylesheets>
    <children>
-      <Button layoutX="445.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleButtonActionCustomer" prefHeight="73.0" prefWidth="172.0" text=" A Customer? " />
-      <Button layoutX="445.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleButtonActionEmployee" prefHeight="73.0" prefWidth="172.0" text="An Employee?" />
+      <Button layoutX="445.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleButtonActionCustomer" prefHeight="73.0" prefWidth="172.0" text="View Available Cars " />
+      <Button layoutX="445.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleButtonActionEmployee" prefHeight="73.0" prefWidth="172.0" text="Log in " />
       <Button layoutX="628.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleButtonActionExit" prefHeight="33.0" prefWidth="71.0" text="Exit" />
       <Label layoutX="371.0" layoutY="39.0" prefHeight="59.0" prefWidth="347.0" text="  Welcome to the ***** Car Rental Shop " textAlignment="CENTER">
          <font>

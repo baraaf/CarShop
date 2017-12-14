@@ -13,7 +13,6 @@
         <URL value="@fxmlemployeeslist.css" />
     </stylesheets>
    <children>
-      <Button layoutX="571.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleButtonActionExit" text="exit" />
       <Button layoutX="481.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleButtonActionBack" text="back" />
       <Label layoutX="249.0" layoutY="35.0" text="Employee List" textFill="#1947ee">
          <font>
@@ -25,7 +24,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="delete_b" layoutX="64.0" layoutY="431.0" mnemonicParsing="false" text="Delete Employee">
+      <Button fx:id="delete_b" layoutX="64.0" layoutY="431.0" mnemonicParsing="false" onAction="#delete_row" text="Delete Employee">
          <font>
             <Font size="15.0" />
          </font>

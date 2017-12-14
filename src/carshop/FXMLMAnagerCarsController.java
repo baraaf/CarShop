@@ -19,6 +19,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
@@ -59,7 +60,7 @@ private ObservableList<cars> data;
     public void initialize(URL url, ResourceBundle rb) {
      data = FXCollections.observableArrayList();
         setCellTable();
-        LoadDataFromDatabase();    }    
+        refreshTable();    }    
     
 private void setCellTable() {
         model_b.setCellValueFactory(new PropertyValueFactory<>("model"));
@@ -71,12 +72,14 @@ private void setCellTable() {
 
     }
 
-    private void LoadDataFromDatabase() {
+    private void refreshTable() {
+        System.out.println(FXMLLoginController.id);
+      data.clear();
         try {
             DatabaseAPI db = new DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM cars ");
             while (rs.next()) {
-                cars c = new cars(rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), ""+ rs.getInt(5),rs.getString(4));
+                cars c = new cars(""+rs.getInt(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), ""+ rs.getInt(5),rs.getString(4));
                 data.add(c);
 
             }
@@ -87,5 +90,80 @@ private void setCellTable() {
         car_table.setItems(data);
 
     }
+ 
+            @FXML
+
+    public void delete_row( ) {
+    
+      cars car_selected=   car_table.getSelectionModel().getSelectedItem();
+      
+      try {
+            DatabaseAPI db = new DatabaseAPI();
+             db.write("delete  from cars where car_id ="+car_selected.getCar_id());
+            System.out.println("delete  from cars where car_id ="+car_selected.getCar_id());
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+      refreshTable(); 
+
+    }
+    
+    public void add_row( ) {
+    
+      cars car_selected=   car_table.getSelectionModel().getSelectedItem();
+      
+      try {
+            DatabaseAPI db = new DatabaseAPI();
+             //db.write("insert into cars  values ("+car_selected.getCar_id()+","+);
+            System.out.println("delete  from cars where car_id ="+car_selected.getCar_id().toString());
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+
+    }
+    
+    
+    
+    
+    
+   
+    public void edit_cell_capacity(CellEditEvent editedCell) {
+    
+      cars car_selected=   car_table.getSelectionModel().getSelectedItem();
+      
+
+    }
+    public void edit_cell_rent(CellEditEvent editedCell) {
+    
+      cars car_selected=   car_table.getSelectionModel().getSelectedItem();
+      
+
+    }
+      public void edit_cell_times_rented(CellEditEvent editedCell) {
+    
+      cars car_selected=   car_table.getSelectionModel().getSelectedItem();
+      
+
+    }
+        public void edit_cell_status(CellEditEvent editedCell) {
+    
+      cars car_selected=   car_table.getSelectionModel().getSelectedItem();
+      
+
+    }
+     @FXML
+            private void handleButtonActionAddCsr(ActionEvent event) throws IOException {
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("AddCar.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+          Stage s=new Stage();
+                //app_stage.hide(); 
+                s.setScene(home_page_scene);
+                s.show(); 
+
+    }
 }
+
 

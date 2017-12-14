@@ -35,6 +35,7 @@ public class FXMLLoginController implements Initializable {
     @FXML
     private Label invalid_label;
 
+    
     @FXML
     private TextField user_box;
 

@@ -23,7 +23,8 @@
             <TableColumn fx:id="status_b" prefWidth="75.0" text="Status" />
          </columns>
       </TableView>
-      <Button layoutX="156.0" layoutY="344.0" mnemonicParsing="false" text="Add" />
+      <Button layoutX="156.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleButtonActionAddCsr" text="Add" />
       <Button layoutX="292.0" layoutY="344.0" mnemonicParsing="false" text="Edit" />
+      <Button layoutX="384.0" layoutY="344.0" mnemonicParsing="false" onAction="#delete_row" text="delete" />
    </children>
 </AnchorPane>

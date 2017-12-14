@@ -44,5 +44,16 @@ public class FXMLEmployeeProfileController implements Initializable {
                 app_stage.show(); 
 
     }
+        @FXML
+            private void handleButtonActionEdit(ActionEvent event) throws IOException {
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("EmployeeProfileEdit.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+          Stage s=new Stage();
+                //app_stage.hide(); 
+                s.setScene(home_page_scene);
+                s.show(); 
+
+    }
     
 }
