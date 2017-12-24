@@ -3,32 +3,44 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLEmployeesList.fxml</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLEmplyeeCarsController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/fxmlmanager.css</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/addcar.css</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/fxmlmanagereditprofile.css</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLManagerEditProfileController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/AddCarController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLContactUsController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/cars.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLManagerController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLManagerProfileController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLMAnagerCarsController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLCarsGuestController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employees.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employeeprofileedit.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/login/FXMLLoginController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/AddCarController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/FXMLEmplyeeCarsController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/fxmlmanagereditprofile.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLManagerProfileController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/cars.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/login/FXMLHomeOfHome.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/customer/FXMLContactUsController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/customer/FXMLGuestController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/login/FXMLHomeOfHomeController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLManagerController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/login/FXMLLogin.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/addcar.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/FXMLEmployeeProfileController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLManagerEditProfile.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLManagerEditProfileController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/customer/FXMLGuest.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/EmployeeProfileEdit.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/AddCar.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/fxmlmanager.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/employeeprofileedit.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/EmployeeProfileEditController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/customer/FXMLContactUs.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/employees.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/EmployeeProfileController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLEmployeesListController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLEmployeesList.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/login/fxmlhomeofhome.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLMAnagerCars.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLManagerProfile.fxml</file>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/runner.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLLoginController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/EmployeeProfileEditController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLCustomersFromEmployeesController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLEmployeeProfileController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/EmployeeProfileEdit.fxml</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLEmployeesListController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/AddCar.fxml</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/EmployeeProfileController.java</file>
-            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/FXMLManagerEditProfile.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/FXMLMAnagerCarsController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/fxmlemplyeecars.css</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/customer/FXMLCarsGuest.fxml</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/manager/fxmlmanagerprofile.css</file>
             <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/DatabaseAPI.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/customer/FXMLCarsGuestController.java</file>
+            <file>file:/C:/Users/Doctor%20Baraa/Documents/NetBeansProjects/CarShop/src/carshop/employee/FXMLCustomersFromEmployeesController.java</file>
         </group>
     </open-files>
 </project-private>
