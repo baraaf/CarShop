@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package carshop;
+package carshop.customer;
 
 import java.io.IOException;
 import java.net.URL;
@@ -30,9 +30,9 @@ import javafx.stage.Stage;
  */
 public class FXMLCarsGuestController implements Initializable {
 
-    private ObservableList<cars> data;
+    private ObservableList<carshop.manager.cars> data;
     @FXML
-    private TableView<cars> car_table;
+    private TableView<carshop.manager.cars> car_table;
     @FXML
     private TableColumn<?, ?> model_b;
     @FXML
@@ -84,11 +84,11 @@ public class FXMLCarsGuestController implements Initializable {
 
     private void LoadDataFromDatabase() {
         try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM cars ");
             while (rs.next()) {
                if("available".equals(rs.getString("status"))){
-                cars c = new cars(""+rs.getString(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), "" + rs.getInt(5),rs.getString(4));
+                carshop.manager.cars c = new carshop.manager.cars(""+rs.getString(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), "" + rs.getInt(5),rs.getString(4));
                 data.add(c);
                 }
             }
