@@ -47,7 +47,7 @@ private ObservableList<cars> data;
     
         @FXML
             private void handleButtonActionBackC(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLManager.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLManager.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -158,7 +158,7 @@ private void setCellTable() {
     }
      @FXML
             private void handleButtonActionAddCsr(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("AddCar.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.AddCar.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           Stage s=new Stage();
