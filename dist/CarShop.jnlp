@@ -8,15 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <jar href="CarShop.jar" size="192581" download="eager" />
-=======
-    <jar href="CarShop.jar" size="192666" download="eager" />
->>>>>>> 0f2d3a5e9f9a82b1c270a3c56403cd5b4db9b393
-=======
-    <jar href="CarShop.jar" size="192666" download="eager" />
->>>>>>> 0f2d3a5e9f9a82b1c270a3c56403cd5b4db9b393
+    <jar href="CarShop.jar" size="192615" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.42-bin.jar" size="996444" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CarShop" >
