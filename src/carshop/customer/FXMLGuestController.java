@@ -34,7 +34,7 @@ public class FXMLGuestController implements Initializable {
     
     @FXML
             private void handleButtonActionToContact(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLContactUs.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.customer.FXMLContactUs.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -54,7 +54,7 @@ public class FXMLGuestController implements Initializable {
             
            @FXML
             private void handleButtonActionToAvailableCars(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLCarsGuest.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.customer.FXMLCarsGuest.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           

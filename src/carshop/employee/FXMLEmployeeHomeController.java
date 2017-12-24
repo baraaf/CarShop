@@ -53,7 +53,7 @@ public class FXMLEmployeeHomeController implements Initializable {
            @FXML
 
     private void handleButtonActionLogout(ActionEvent event) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLLogin.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.login.FXMLLogin.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -66,7 +66,7 @@ public class FXMLEmployeeHomeController implements Initializable {
         @FXML
 
     private void handleButtonActionProfile(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLEmployeeProfile.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLEmployeeProfile.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -79,7 +79,7 @@ public class FXMLEmployeeHomeController implements Initializable {
         @FXML
 
     private void handleButtonActionCars(ActionEvent event) throws IOException {
- Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLEmplyeeCars.fxml"));
+ Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLEmplyeeCars.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -92,7 +92,7 @@ public class FXMLEmployeeHomeController implements Initializable {
         @FXML
 
     private void handleButtonActionCustomers(ActionEvent event) throws IOException {
-       Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLCustomersFromEmployees.fxml"));
+       Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLCustomersFromEmployees.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
