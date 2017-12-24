@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="398.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.FXMLLoginController">
+<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="398.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.login.FXMLLoginController">
     <stylesheets>
         <URL value="@fxmllogin.css" />
     </stylesheets>

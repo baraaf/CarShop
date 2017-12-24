@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="741.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.FXMLHomeOfHomeController">
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="741.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.login.FXMLHomeOfHomeController">
     <stylesheets>
         <URL value="@fxmlhomeofhome.css" />
     </stylesheets>

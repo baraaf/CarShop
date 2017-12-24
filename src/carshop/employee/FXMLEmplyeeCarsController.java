@@ -77,10 +77,10 @@ public class FXMLEmplyeeCarsController implements Initializable {
 
     private void LoadDataFromDatabase() {
         try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM cars ");
             while (rs.next()) {
-                cars c = new cars(""+rs.getInt(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), "" + rs.getInt(5),rs.getString(4));
+                carshop.manager.cars c = new carshop.manager.cars(""+rs.getInt(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), "" + rs.getInt(5),rs.getString(4));
                 data.add(c);
 
             }
