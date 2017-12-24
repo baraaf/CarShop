@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package carshop;
+package carshop.login;
 
 import java.io.IOException;
 import java.net.URL;
@@ -123,7 +123,7 @@ public class FXMLLoginController implements Initializable {
                 + " AND password= " + "'" + pass_box.getText() + "'");
 
         try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM employees WHERE user_name= " + "'" + user_box.getText() + "'"
                     + " AND PASSWORD= " + "'" + pass_box.getText() + "'");
 

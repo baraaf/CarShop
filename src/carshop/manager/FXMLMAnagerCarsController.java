@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package carshop;
+package carshop.manager;
 
 import java.io.IOException;
 import java.net.URL;
@@ -72,11 +72,14 @@ private void setCellTable() {
 
     }
 
+
+
+
     private void refreshTable() {
-        System.out.println(FXMLLoginController.id);
+        System.out.println(carshop.login.FXMLLoginController.id);
       data.clear();
         try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM cars ");
             while (rs.next()) {
                 cars c = new cars(""+rs.getInt(1),rs.getString(2), "" + rs.getInt(3), "" + rs.getInt(6), ""+ rs.getInt(5),rs.getString(4));
@@ -98,7 +101,7 @@ private void setCellTable() {
       cars car_selected=   car_table.getSelectionModel().getSelectedItem();
       
       try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
              db.write("delete  from cars where car_id ="+car_selected.getCar_id());
             System.out.println("delete  from cars where car_id ="+car_selected.getCar_id());
         } catch (Exception e) {
@@ -114,7 +117,7 @@ private void setCellTable() {
       cars car_selected=   car_table.getSelectionModel().getSelectedItem();
       
       try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
              //db.write("insert into cars  values ("+car_selected.getCar_id()+","+);
             System.out.println("delete  from cars where car_id ="+car_selected.getCar_id().toString());
         } catch (Exception e) {

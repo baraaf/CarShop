@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package carshop;
+package carshop.employee;
 
-import static carshop.FXMLLoginController.id;
+import static carshop.login.FXMLLoginController.id;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -32,9 +32,9 @@ public class FXMLEmplyeeCarsController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    private ObservableList<cars> data;
+    private ObservableList<carshop.manager.cars> data;
     @FXML
-    private TableView<cars> car_table;
+    private TableView<carshop.manager.cars> car_table;
     @FXML
     private TableColumn<?, ?> model_b;
     @FXML

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carshop.FXMLEmployeeProfileController">
+    <stylesheets>
+        <URL value="@fxmlemployeeprofile.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="489.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleButtonActionBack" text="back " />
+      <Label layoutX="96.0" layoutY="75.0" text="Name" />
+      <Label layoutX="82.0" layoutY="129.0" text="Date Of Birth" />
+      <Label layoutX="101.0" layoutY="183.0" text="Salary" />
+      <Label layoutX="86.0" layoutY="237.0" text="Hire Date" />
+      <Label layoutX="92.0" layoutY="297.0" text="Gender" />
+      <Label layoutX="315.0" layoutY="84.0" text="Label" />
+      <Label layoutX="315.0" layoutY="138.0" text="Label" />
+      <Label layoutX="315.0" layoutY="192.0" text="Label" />
+      <Label layoutX="309.0" layoutY="246.0" text="Label" />
+      <Label layoutX="309.0" layoutY="306.0" text="Label" />
+      <Button layoutX="384.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleButtonActionEdit" text="Edit" />
+   </children>
+</AnchorPane>
