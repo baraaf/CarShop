@@ -35,7 +35,7 @@ public class FXMLEmployeeProfileController implements Initializable {
     
       @FXML
             private void handleButtonActionBack(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLEmployeeHome.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLEmployeeHome.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -46,7 +46,7 @@ public class FXMLEmployeeProfileController implements Initializable {
     }
         @FXML
             private void handleButtonActionEdit(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("EmployeeProfileEdit.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.EmployeeProfileEdit.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           Stage s=new Stage();
