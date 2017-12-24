@@ -89,7 +89,7 @@ public class FXMLEmployeesListController implements Initializable {
               data.clear();
 
         try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
             ResultSet rs = db.read("SELECT * FROM employees");
             while (rs.next()) {
                 System.out.println(rs.getString(2));
@@ -114,7 +114,7 @@ public class FXMLEmployeesListController implements Initializable {
       employees employee_selected=   employees_table.getSelectionModel().getSelectedItem();
       
       try {
-            DatabaseAPI db = new DatabaseAPI();
+            carshop.DatabaseAPI db = new carshop.DatabaseAPI();
              db.write("delete  from employees where eid ="+employee_selected.getEid());
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
