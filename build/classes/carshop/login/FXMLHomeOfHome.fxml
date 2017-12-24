@@ -25,7 +25,7 @@
       </Label>
       <ImageView fitHeight="440.0" fitWidth="374.0" layoutX="-2.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../Desktop/carshop-used-car-supermarket-sm.jpg" />
+            <Image url="@../../Image/carshop-used-car-supermarket-sm.jpg" />
          </image>
       </ImageView>
    </children>

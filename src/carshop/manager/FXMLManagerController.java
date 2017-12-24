@@ -30,7 +30,7 @@ public class FXMLManagerController implements Initializable {
            @FXML
 
     private void handleButtonActionProfile(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLManagerProfile.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/manager/FXMLManagerProfile.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -44,7 +44,7 @@ public class FXMLManagerController implements Initializable {
          @FXML
 
     private void handleButtonActionCars(ActionEvent event) throws IOException {
- Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLMAnagerCars.fxml"));
+ Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/manager/FXMLMAnagerCars.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -56,7 +56,7 @@ public class FXMLManagerController implements Initializable {
                 @FXML
 
 private void handleButtonActionEmployees (ActionEvent event) throws IOException {
-       Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLEmployeesList.fxml"));
+       Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/manager/FXMLEmployeesList.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -68,7 +68,7 @@ private void handleButtonActionEmployees (ActionEvent event) throws IOException 
      @FXML
 
     private void handleButtonActionLogout(ActionEvent event) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.login.FXMLLogin.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/login/FXMLLogin.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           

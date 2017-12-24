@@ -36,7 +36,7 @@ public class FXMLCustomersFromEmployeesController implements Initializable {
     
      @FXML
             private void handleButtonActionBack(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLEmployeeHome.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/employee/FXMLEmployeeHome.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           

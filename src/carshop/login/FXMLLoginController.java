@@ -59,11 +59,11 @@ public class FXMLLoginController implements Initializable {
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLEmployeeHome.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/employee/FXMLEmployeeHome.fxml"));
         Scene Emp_home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         
-          Parent Mhome_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLManager.fxml"));
+          Parent Mhome_page_parent = FXMLLoader.load(getClass().getResource("/carshop/manager/FXMLManager.fxml"));
         Scene Man_home_page_scene = new Scene(Mhome_page_parent);
         Stage Mapp_stage = (Stage) ((Node) event.getSource()).getScene().getWindow(); 
         

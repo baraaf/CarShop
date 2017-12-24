@@ -23,7 +23,7 @@ public class runner extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("carshop.login.FXMLHomeOfHome.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/carshop/login/FXMLHomeOfHome.fxml"));
         
         Scene scene = new Scene(root);
         //String css = "LoginStyle.css";

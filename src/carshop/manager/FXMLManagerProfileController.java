@@ -42,7 +42,7 @@ public class FXMLManagerProfileController implements Initializable {
          
         @FXML
             private void handleButtonActionBackC(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLManager.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/manager/FXMLManager.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
@@ -70,7 +70,7 @@ public class FXMLManagerProfileController implements Initializable {
         
  @FXML
             private void handleButtonActionEdit(ActionEvent event) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("carshop.manager.FXMLManagerEditProfile.fxml"));
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("/carshop/manager/FXMLManagerEditProfile.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           Stage s=new Stage();

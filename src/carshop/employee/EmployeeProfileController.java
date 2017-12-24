@@ -107,7 +107,7 @@ public class EmployeeProfileController implements Initializable {
     }
     */
      private void CancelButtonAction(ActionEvent event) throws IOException {
-        Parent EmployeeProfile_parent = FXMLLoader.load(getClass().getResource("carshop.employee.FXMLEmployeeProfile.fxml"));
+        Parent EmployeeProfile_parent = FXMLLoader.load(getClass().getResource("/carshop/employee/FXMLEmployeeProfile.fxml"));
         Scene EmployeeProfile_scene = new Scene(EmployeeProfile_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           
